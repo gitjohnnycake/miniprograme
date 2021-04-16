@@ -1,0 +1,104 @@
+/* user */
+.user {
+  width: 100%;
+  height: 400rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 20rpx grey;
+}
+
+.user-avatar {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  box-shadow: 0 0 10rpx 2rpx grey;
+  overflow: hidden;
+}
+
+.user-avatar image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-name,
+.user-signature {
+  font-size: 14px;
+  margin-top: 20rpx;
+}
+
+.user-gender {
+  float: right;
+  margin-left: 20rpx;
+}
+
+.user-gender image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.user-loginButton {
+  width: 200rpx;
+  height: 60rpx;
+  font-size: 14px;
+  margin-top: 20rpx;
+  background-color: transparent;
+}
+
+/* 用户功能 */
+.user-function{
+  width: 94%;
+  position: relative;
+  margin: auto;
+  top: 40rpx;
+  background-color: #fff;
+  box-shadow: 0 0 10rpx grey;
+  border-radius: 16rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-function image{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 10rpx;
+}
+
+.function{
+  flex: 1;
+  font-size: 14px;
+  margin: 20rpx;
+}
+
+.function::after{
+  content: "";
+  width: 90%;
+  border-bottom: 1px solid lightgrey;
+  position: absolute;
+  margin-top: 64rpx;
+  left: 38rpx;
+}
+
+.function:last-child::after{
+  content: "";
+  border-bottom: none;
+}
+
+.feedback {
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  height: 40rpx;
+  margin-top: -20rpx;
+}

@@ -1,0 +1,30 @@
+<!-- 选项卡遮罩 -->
+<view class="mask" wx:if="{{isShow}}"></view>
+
+<!-- 按选择排序 -->
+<v-select bind:choseValue="choseValue"></v-select>
+
+<!-- 提示 -->
+<view class="tips">变动位置或授权后位置不对，只需下拉刷新即可</view>
+
+<!-- 厕所列表 -->
+<view class="toilet-box">
+  <view class="toilet-list" wx:for="{{toiletData}}" wx:key="index" data-index="{{index}}" bindtap="showMap">
+    <view class="toilet-name toilet-item">
+      <image src="../../images/dizhi.png"></image>
+      {{toiletData[index].title}}
+    </view>
+    <view class="toilet-address toilet-item">
+      <image src="../../images/mingzi.png"></image>
+      {{toiletData[index].address}}
+    </view>
+    <view class="toilet-distance toilet-item">
+      <image src="../../images/juli.png"></image>
+      {{toiletData[index]._distance}}m
+    </view>
+    <view class="good-bad">
+      <image src="../../images/dianzan.png"></image>{{good}}
+      <image src="../../images/cai.png"></image>{{bad}}
+    </view>
+  </view>
+</view>

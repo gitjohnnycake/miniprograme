@@ -1,0 +1,28 @@
+<!-- 用户头像、名称、签名等信息 -->
+<view class="user">
+  <view class="user-avatar">
+    <image src="{{userInfo.avatarUrl}}"></image>
+  </view>
+  <view wx:if="{{hasUserInfo}}" class="user-info">
+    <view class="user-name">
+      {{userInfo.nickName}}
+      <view class="user-gender">
+        <image src="{{gender == 1 ? '../../images/nan.png' : '../../images/nv.png'}}"></image>
+      </view>
+    </view>
+  </view>
+  <button class="user-loginButton" bindtap="getUserProfile" wx:if="{{!hasUserInfo}}">点我登陆</button>
+</view>
+
+<!-- 用户功能 -->
+<view class="user-function">
+  <view class="user-collect function" bindtap="goAbout">
+    <image src="../../images/guanzhu.png"></image>
+    关于
+  </view>
+  <view class="user-feedback function">
+    <image src="../../images/xiaoxi.png"></image>
+    用户反馈
+    <button open-type="feedback" class="feedback" style="width: 100%">用户反馈</button>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+.about{
+  width: 80%;
+  height: 400rpx;
+  position: relative;
+  margin: auto;
+  top: 300rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+  box-shadow: 0 0 14rpx lightgrey;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  text-align: center;
+}

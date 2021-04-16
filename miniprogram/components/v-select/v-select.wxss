@@ -1,0 +1,14 @@
+.select-box {
+  background-color: #ffffff;
+  font-size: 28rpx;
+  padding: 20rpx;
+  position: absolute;
+  top: 0;
+  width: 94.8%;
+  box-shadow: 0 0 10rpx grey;
+  z-index: 999;
+}
+
+.select-item-box {
+  margin-top: 20rpx;
+}

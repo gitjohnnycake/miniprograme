@@ -1,0 +1,5 @@
+<view class="select-box">
+  <view class="select-name">
+    <text class="current-name">智能排序</text>
+  </view>
+</view>

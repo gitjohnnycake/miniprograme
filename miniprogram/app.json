@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/about/about"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于定位寻找周边厕所"
+    }
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "厕所去哪了",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#5ba5f3",
+    "backgroundColor": "blue",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "厕所",
+        "iconPath": "images/cesuo.png",
+        "selectedIconPath": "images/cesuoselect.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/wode.png",
+        "selectedIconPath": "images/wodeselect.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
